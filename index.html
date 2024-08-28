@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header class ="header">
+        <!-- Encabezado donde ira el logo-->
+        <a href = "#" rel = "" >
+            <img class = "logo" src ="./img/Logo-1.png" alt="Logo de Alura Latam">
+        </a>
+    </header>
+    
+    <main>
+        <!--Seccion Principal donde va la caja de texto, botones y pantalla de encriptado-->
+        <section class="encriptador">
+
+            <textarea class="encriptar" placeholder="Ingrese el texto aquí"></textarea> 
+            <div class="encriptador_Mensaje">
+                    <img class = "icono_Mensaje"  src="./img/bi_exclamation-circle-fill.png" alt="Icono de Mensaje">
+                    <p class="texto_Mensaje" >Solo letras minúsculas y sin acentos</p>
+            </div>
+            
+            <div class="contenedor_Botones">
+                <button class="boton_Encriptar" type="submit">Encriptar</button>
+                <button class="boton_Desencriptar" type="submit">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="visualizador">
+            <div class="contenedor_Visualizador">
+                <img class="imagen_Mujer" src="./img/Muñeco.png" alt="Imagen de Mujer y Lupa">
+               
+                <p class="texto_Visualizador1">
+                    Ningún mensaje fue encontrado
+                </p>
+
+                <p class="texto_Visualizador2">
+                    Ingresa el texto que desees encriptar o desencriptar.
+                </p>
+
+            </div>
+
+
+            <textarea type="mensaje" class="evaluar" readonly></textarea>       
+            <button class="boton_Copiar" type="submit">
+                Copiar
+            </button>
+        </section>
+    </main>
+    
+    <footer>
+        <p class="mensajeFooter">Encriptador de Texto - Desarrollado por Johan Rivera </p>
+        <p>2024</p>
+
+    </footer>    
+
+    <script src="app.js" defer></script>
+</body>
+</html>
